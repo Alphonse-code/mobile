@@ -1,0 +1,33 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar [class]="">
+    <ion-title>
+      List
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prénom</th>
+        <th scope="col">Email</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of usersData">
+        <td>{{ item.user_id }}</td>
+        <td>{{ item.user_nom }}</td>
+        <td>{{ item.user_prenom }}</td>
+        <td>{{ item.user_email }}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+ 
+</ion-content>
